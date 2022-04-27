@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Columns #  Columns help organize shorter pieces of content horizontally for readability.
-{{&lt; columns &gt;}} &lt;!-- begin columns block --&gt; # Left Content Lorem markdownum insigne... &lt;---&gt; &lt;!-- magic separator, between columns --&gt; # Mid Content Lorem markdownum insigne... &lt;---&gt; &lt;!-- magic separator, between columns --&gt; # Right Content Lorem markdownum insigne... {{&lt; /columns &gt;}} Example #  Left Content #  Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat stringit, frustra Saturnius uteroque inter!">
+<meta name="description" content="使用 hugo 创建博客 #   安装 hugo  brew install hugo 创建博客目录 my_blog_project  hugo new site my_blog_project cd my_blog_project 使用主题 hugo-book  git init git submodule add https://github.com/alex-shpak/hugo-book themes/hugo-book 复制主题示例  cp -R themes/hugo-book/exampleSite/content . 启动server查看是否成功  hugo server --minify --theme hugo-book 使用 GitHub Pages 发布 #  Github上创建 repository  Repository name是 github_account_name.github.io
+本地博客目录下生成页面  hugo --theme=hugo-book --baseUrl=&quot;http://github_account_name.github.io/&quot; 将静态文件上传到 Github  cd public git init git remote add origin git@github.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
-<meta property="og:description" content="Columns #  Columns help organize shorter pieces of content horizontally for readability.
-{{&lt; columns &gt;}} &lt;!-- begin columns block --&gt; # Left Content Lorem markdownum insigne... &lt;---&gt; &lt;!-- magic separator, between columns --&gt; # Mid Content Lorem markdownum insigne... &lt;---&gt; &lt;!-- magic separator, between columns --&gt; # Right Content Lorem markdownum insigne... {{&lt; /columns &gt;}} Example #  Left Content #  Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat stringit, frustra Saturnius uteroque inter!" />
+<meta property="og:description" content="使用 hugo 创建博客 #   安装 hugo  brew install hugo 创建博客目录 my_blog_project  hugo new site my_blog_project cd my_blog_project 使用主题 hugo-book  git init git submodule add https://github.com/alex-shpak/hugo-book themes/hugo-book 复制主题示例  cp -R themes/hugo-book/exampleSite/content . 启动server查看是否成功  hugo server --minify --theme hugo-book 使用 GitHub Pages 发布 #  Github上创建 repository  Repository name是 github_account_name.github.io
+本地博客目录下生成页面  hugo --theme=hugo-book --baseUrl=&quot;http://github_account_name.github.io/&quot; 将静态文件上传到 Github  cd public git init git remote add origin git@github." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://mileshan.github.io/docs/shortcodes/columns/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="http://mileshan.github.io/docs/records/my_blog_building_record/" /><meta property="article:section" content="docs" />
 
 
 
-<title>Columns | Darwin</title>
+<title>My Blog Building Record | Darwin</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css" integrity="sha256-gsXb0jRHzuC0wqo&#43;0Izglh&#43;qQOH6Nw7uT4yfAuDUa18=" crossorigin="anonymous">
@@ -59,7 +59,7 @@ https://github.com/alex-shpak/hugo-book
 
   <ul>
 <li>
-<p><a href="/docs/records/my_blog_building_record/"><strong>本博客搭建之法</strong></a>
+<p><a href="/docs/records/my_blog_building_record/"class=active><strong>本博客搭建之法</strong></a>
 <!-- raw HTML omitted --></p>
 </li>
 <li>
@@ -90,7 +90,7 @@ https://github.com/alex-shpak/hugo-book
 <p><a href="/docs/shortcodes/buttons/">Buttons</a></p>
 </li>
 <li>
-<p><a href="/docs/shortcodes/columns/"class=active>Columns</a></p>
+<p><a href="/docs/shortcodes/columns/">Columns</a></p>
 </li>
 <li>
 <p><a href="/docs/shortcodes/expand/">Expand</a></p>
@@ -151,7 +151,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Columns</strong>
+  <strong>My Blog Building Record</strong>
 
   <label for="toc-control">
     
@@ -167,7 +167,8 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#example">Example</a></li>
+    <li><a href="#使用-hugo-创建博客">使用 hugo 创建博客</a></li>
+    <li><a href="#使用-github-pages-发布">使用 GitHub Pages 发布</a></li>
   </ul>
 </nav>
 
@@ -180,64 +181,61 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="columns">
-  Columns
-  <a class="anchor" href="#columns">#</a>
-</h1>
-<p>Columns help organize shorter pieces of content horizontally for readability.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{&lt; <span style="color:#f92672">columns</span> &gt;}} <span style="color:#75715e">&lt;!-- begin columns block --&gt;</span>
-# Left Content
-Lorem markdownum insigne...
-
-&lt;<span style="color:#f92672">---</span>&gt; <span style="color:#75715e">&lt;!-- magic separator, between columns --&gt;</span>
-
-# Mid Content
-Lorem markdownum insigne...
-
-&lt;<span style="color:#f92672">---</span>&gt; <span style="color:#75715e">&lt;!-- magic separator, between columns --&gt;</span>
-
-# Right Content
-Lorem markdownum insigne...
-{{&lt; /<span style="color:#f92672">columns</span> &gt;}}
-</code></pre></div><h2 id="example">
-  Example
-  <a class="anchor" href="#example">#</a>
+  <article class="markdown"><h2 id="使用-hugo-创建博客">
+  使用 hugo 创建博客
+  <a class="anchor" href="#%e4%bd%bf%e7%94%a8-hugo-%e5%88%9b%e5%bb%ba%e5%8d%9a%e5%ae%a2">#</a>
 </h2>
-<div class="book-columns flex flex-wrap">
-
-  <div class="flex-even markdown-inner">
-    <h2 id="left-content">
-  Left Content
-  <a class="anchor" href="#left-content">#</a>
+<ol>
+<li>安装 <a href="https://gohugo.io">hugo</a></li>
+</ol>
+<pre tabindex="0"><code>brew install hugo
+</code></pre><ol start="2">
+<li>创建博客目录 my_blog_project</li>
+</ol>
+<pre tabindex="0"><code>hugo new site my_blog_project
+cd my_blog_project
+</code></pre><ol start="3">
+<li>使用主题 <a href="https://hugo-book-demo.netlify.app/">hugo-book</a></li>
+</ol>
+<pre tabindex="0"><code>git init 
+git submodule add https://github.com/alex-shpak/hugo-book themes/hugo-book
+</code></pre><ol start="4">
+<li>复制主题示例</li>
+</ol>
+<pre tabindex="0"><code>cp -R themes/hugo-book/exampleSite/content .
+</code></pre><ol start="5">
+<li>启动server查看是否成功</li>
+</ol>
+<pre tabindex="0"><code>hugo server --minify --theme hugo-book
+</code></pre><h2 id="使用-github-pages-发布">
+  使用 GitHub Pages 发布
+  <a class="anchor" href="#%e4%bd%bf%e7%94%a8-github-pages-%e5%8f%91%e5%b8%83">#</a>
 </h2>
-<p>Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
-stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
-protulit, sed sed aere valvis inhaesuro Pallas animam: qui <em>quid</em>, ignes.
-Miseratus fonte Ditis conubia.
-  </div>
-
-  <div class="flex-even markdown-inner">
-    <h2 id="mid-content">
-  Mid Content
-  <a class="anchor" href="#mid-content">#</a>
-</h2>
-<p>Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
-stringit, frustra Saturnius uteroque inter!
-  </div>
-
-  <div class="flex-even markdown-inner">
-    <h2 id="right-content">
-  Right Content
-  <a class="anchor" href="#right-content">#</a>
-</h2>
-<p>Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
-stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
-protulit, sed sed aere valvis inhaesuro Pallas animam: qui <em>quid</em>, ignes.
-Miseratus fonte Ditis conubia.
-  </div>
-
-</div>
-
+<ol start="6">
+<li><a href="https://github.com/new">Github上创建 repository</a></li>
+</ol>
+<p>Repository name是 <code>github_account_name.github.io</code></p>
+<ol start="7">
+<li>本地博客目录下生成页面</li>
+</ol>
+<pre tabindex="0"><code>hugo --theme=hugo-book --baseUrl=&quot;http://github_account_name.github.io/&quot;
+</code></pre><ol start="8">
+<li>将静态文件上传到 Github</li>
+</ol>
+<pre tabindex="0"><code>cd public
+git init
+git remote add origin git@github.com:github_account_name/github_account_name.github.io.git
+git add .
+git commit -m &quot;first commit&quot;
+git push origin main
+</code></pre><ol start="9">
+<li>在 Github Actions 完成集成部署后，访问 <code>github_account_name.github.io</code>。完成。</li>
+</ol>
+<blockquote>
+<p>hugo 项目地址： <a href="https://github.com/gohugoio/hugo/">https://github.com/gohugoio/hugo/</a></p>
+<p>hugo 中文文档： <a href="https://www.gohugo.org/doc/">https://www.gohugo.org/doc/</a></p>
+<p>hugo-book 仓库地址： <a href="https://github.com/alex-shpak/hugo-book/">https://github.com/alex-shpak/hugo-book/</a></p>
+</blockquote>
 </article>
  
       
@@ -279,7 +277,8 @@ Miseratus fonte Ditis conubia.
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#example">Example</a></li>
+    <li><a href="#使用-hugo-创建博客">使用 hugo 创建博客</a></li>
+    <li><a href="#使用-github-pages-发布">使用 GitHub Pages 发布</a></li>
   </ul>
 </nav>
 
